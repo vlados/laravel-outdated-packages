@@ -13,10 +13,10 @@ class CheckPackagesJob implements ShouldQueue
     use SerializesModels;
     use Queueable;
 
-
     public function handle(): bool
     {
         echo "bla";
+
         return true;
     }
 }

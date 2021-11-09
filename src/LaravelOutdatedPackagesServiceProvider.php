@@ -24,12 +24,12 @@ class LaravelOutdatedPackagesServiceProvider extends PackageServiceProvider
             ->hasMigration('create_laravel-outdated-packages_table')
             ->hasCommand(LaravelOutdatedPackagesCommand::class);
     }
+
     public function boot()
     {
-        
+
 //        $this->callAfterResolving(Job::class, function (Schedule $schedule) {
 //            $schedule->job('some:command')->everyMinute();
 //        });
     }
-
 }
