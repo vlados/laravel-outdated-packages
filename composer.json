@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "vlados/laravel-outdated-packages",
+    "description": "Laravel package that automatically check composer and npm for outdated packages",
     "keywords": [
-        ":vendor_name",
+        "vlados",
         "laravel",
-        ":package_slug"
+        "laravel-outdated-packages"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/vlados/laravel-outdated-packages",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Vladislav Stoitsov",
+            "email": "vlados.01@gmail.com",
             "role": "Developer"
         }
     ],
@@ -34,13 +34,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Vlados\\LaravelOutdatedPackages\\": "src",
+            "Vlados\\LaravelOutdatedPackages\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Vlados\\LaravelOutdatedPackages\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -54,10 +54,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Vlados\\LaravelOutdatedPackages\\LaravelOutdatedPackagesServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\SkeletonFacade"
+                "LaravelOutdatedPackages": "Vlados\\LaravelOutdatedPackages\\LaravelOutdatedPackagesFacade"
             }
         }
     },

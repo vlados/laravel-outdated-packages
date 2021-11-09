@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Vlados\LaravelOutdatedPackages\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class LaravelOutdatedPackagesCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-outdated-packages';
 
     public $description = 'My command';
 
